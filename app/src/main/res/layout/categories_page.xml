@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".PagesActivities.CategoriesActivity">
+
+
+    <TextView
+        android:id="@+id/usernameLabelCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0048FF"
+        android:text="@string/go_back" />
+
+    <TextView
+        android:id="@+id/categoriesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameLabelCategories"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/categoriesViewName"
+        android:textSize="35sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/addCategoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoriesTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/addCategoryTitle"
+        android:textSize="20sp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/inputCategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/addCategoryTitle"
+        android:layout_margin="30dp"
+        android:hint="@string/category_name_input" />
+
+    <Button
+        android:id="@+id/submitAddCategoryButton"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/inputCategoryName"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#03611A"
+        android:text="@string/add_button"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>
+
+

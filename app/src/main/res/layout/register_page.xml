@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".PagesActivities.RegisterActivity">
+
+    <TextView
+        android:id="@+id/registerLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:text="@string/register_label"
+        android:textAlignment="center"
+        android:textSize="45sp" />
+
+    <EditText
+        android:id="@+id/registerUsernameinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerLabel"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="70dp"
+        android:autofillHints="Введите имя пользователя"
+        android:hint="@string/register_username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/registerPasswordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerUsernameinput"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="35dp"
+        android:autofillHints="Введите имя пользователя"
+        android:hint="@string/register_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/registerUserButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerPasswordInput"
+        android:layout_margin="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#1BEB12"
+        android:text="@string/register_button" />
+
+    <Button
+        android:id="@+id/redirectToLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerUserButton"
+        android:layout_marginHorizontal="60dp"
+        android:backgroundTint="#213B8C"
+        android:text="@string/login_button" />
+
+</RelativeLayout>

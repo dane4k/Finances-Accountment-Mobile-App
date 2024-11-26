@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".PagesActivities.LoginActivity">
+
+    <TextView
+        android:id="@+id/loginLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:text="@string/login_label"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        />
+
+    <EditText
+        android:id="@+id/loginUsernameinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginLabel"
+        android:layout_marginHorizontal="35dp"
+
+        android:layout_marginTop="70dp"
+        android:hint="@string/register_username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/loginPasswordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginUsernameinput"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="35dp"
+        android:autofillHints="Введите имя пользователя"
+        android:hint="@string/register_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginUserButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginPasswordInput"
+        android:layout_margin="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#1BEB12"
+        android:text="@string/login_button"
+
+        />
+
+    <Button
+        android:id="@+id/redirectToRegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginUserButton"
+        android:layout_marginHorizontal="60dp"
+        android:autofillHints="Введите пароль"
+        android:backgroundTint="#213B8C"
+        android:text="@string/register_button" />
+
+
+</RelativeLayout>
