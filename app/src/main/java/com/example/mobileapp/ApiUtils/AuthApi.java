@@ -15,6 +15,7 @@ public class AuthApi {
 
     /**
      * реквест в апи для добавления юзера
+     *
      * @param username ник
      * @param password пароль
      * @return результат запроса
@@ -39,6 +40,7 @@ public class AuthApi {
 
     /**
      * запрос на вход юзера в систему
+     *
      * @param username ник
      * @param password пароль
      * @return результат запроса
@@ -63,6 +65,7 @@ public class AuthApi {
 
     /**
      * для упрощения создания реквеста
+     *
      * @param username ник
      * @param password пароль
      * @return

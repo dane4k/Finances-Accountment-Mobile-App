@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".PagesActivities.HomeActivity">
 
 
@@ -16,8 +15,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/appNameLabel"
         android:textSize="25sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/mainPageLabel"
@@ -25,56 +23,51 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
+        android:text="@string/main_page_label"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:text="@string/main_page_label" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/usernameLabelHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="240dp"
+        android:layout_marginTop="20dp"
         android:textSize="25sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/redirectToCategoriesButton"
         android:layout_width="wrap_content"
         android:layout_height="125dp"
-        android:text="@string/redir_categories_button_text"
-        android:backgroundTint="#3866C1"
         android:layout_below="@id/mainPageLabel"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        />
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#3866C1"
+        android:text="@string/redir_categories_button_text" />
 
     <Button
         android:id="@+id/redirectToTransactionsButton"
         android:layout_width="wrap_content"
         android:layout_height="125dp"
-        android:text="@string/redir_transactions_button_text"
-        android:backgroundTint="#3866C1"
         android:layout_below="@id/redirectToCategoriesButton"
-
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        />
+
+        android:backgroundTint="#3866C1"
+        android:text="@string/redir_transactions_button_text" />
 
 
     <Button
         android:id="@+id/logOutButton"
         android:layout_width="200dp"
         android:layout_height="125dp"
-        android:text="@string/logout_button_text"
-        android:backgroundTint="#DC0021"
         android:layout_below="@id/redirectToTransactionsButton"
-
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        />
 
+        android:backgroundTint="#DC0021"
+        android:text="@string/logout_button_text" />
 
 
 </RelativeLayout>

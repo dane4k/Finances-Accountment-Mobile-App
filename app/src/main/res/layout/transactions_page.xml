@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".PagesActivities.TransactionsActivity">
+
+    <TextView
+        android:id="@+id/usernameLabelTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0048FF"
+        android:text="@string/go_back" />
+
+    <TextView
+        android:id="@+id/transactionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameLabelTransactions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Транзакции"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputAmount"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/transactionsTitle"
+        android:layout_margin="30dp"
+        android:background="#BDF8DF"
+
+        android:hint="Сумма" />
+
+    <TextView
+        android:id="@+id/inputDate"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/inputAmount"
+        android:layout_margin="30dp"
+        android:background="#BDF8DF"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:text="Выберите дату" />
+
+
+    <Spinner
+        android:id="@+id/inputType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputDate"
+        android:layout_margin="30dp"
+
+        android:background="#BDF8DF" />
+
+    <Spinner
+        android:id="@+id/inputCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputType"
+
+        android:layout_margin="30dp"
+        android:background="#BDF8DF" />
+
+    <Button
+        android:id="@+id/submitAddTransactionButton"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/inputCategory"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#03611A"
+        android:text="@string/add_button"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/submitAddTransactionButton"
+        android:layout_marginTop="10dp">
+
+        <TableLayout
+            android:id="@+id/transactionsTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <TableRow android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="Сумма"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="Дата"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="Тип"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="Категория"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="Действия"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

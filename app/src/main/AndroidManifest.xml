@@ -28,6 +28,7 @@
         <activity android:name=".PagesActivities.LoginActivity"></activity>
         <activity android:name=".PagesActivities.HomeActivity"></activity>
         <activity android:name=".PagesActivities.CategoriesActivity"></activity>
+        <activity android:name=".PagesActivities.TransactionsActivity"></activity>
 
     </application>
 

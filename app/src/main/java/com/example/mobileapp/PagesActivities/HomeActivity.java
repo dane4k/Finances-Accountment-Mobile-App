@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +14,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class HomeActivity extends AppCompatActivity {
-    private ExecutorService executorService = Executors.newSingleThreadExecutor(); // Create a single thread executor
+    private ExecutorService executorService = Executors.newSingleThreadExecutor();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +31,7 @@ public class HomeActivity extends AppCompatActivity {
 
         Button logOutButton = findViewById(R.id.logOutButton);
         Button redirectToCategoriesButton = findViewById(R.id.redirectToCategoriesButton);
-
+        Button redirectToTransactionsButton = findViewById(R.id.redirectToTransactionsButton);
 
         redirectToCategoriesButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,11 +42,20 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        redirectToTransactionsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, TransactionsActivity.class);
+                intent.putExtra("USERNAME", username);
+                startActivity(intent);
+            }
+        });
 
         logOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
         });
 

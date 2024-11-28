@@ -39,6 +39,8 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.okhttp)
     implementation(libs.jackson.databind)
+    implementation(libs.jackson.datatype.jsr310)
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

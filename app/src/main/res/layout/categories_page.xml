@@ -69,7 +69,57 @@
         android:text="@string/add_button"
         android:textSize="25sp" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/submitAddCategoryButton"
+        android:layout_marginTop="10dp"
+
+
+        >
+
+
+        <TableLayout
+            android:id="@+id/categoriesTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+
+            >
+
+
+            <TableRow android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="Название"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="Действие"
+                    android:textSize="20sp"
+
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
 
 </RelativeLayout>
+
+
 
 

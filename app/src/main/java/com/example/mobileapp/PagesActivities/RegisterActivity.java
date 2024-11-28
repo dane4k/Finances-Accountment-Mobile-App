@@ -30,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
         EditText registerUsernameinput = findViewById(R.id.registerUsernameinput);
         EditText registerPasswordInput = findViewById(R.id.registerPasswordInput);
 
-        redirectToLoginButton.setOnClickListener(new View.OnClickListener() { // редирект на логин
+        redirectToLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
@@ -50,7 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
                 }
 
                 executorService.execute(() -> {
-                    String result = authController.registerUser (username, password);
+                    String result = authController.registerUser(username, password);
                     runOnUiThread(() -> handleRegistrationResult(result));
                 });
             }
@@ -58,13 +58,13 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     }
+
     private void handleRegistrationResult(String result) {
         Toast.makeText(RegisterActivity.this, result, Toast.LENGTH_SHORT).show();
 
         if ("Пользователь зарегистрирован".equals(result)) {
             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
             startActivity(intent);
-//            finish();
         }
     }
 }

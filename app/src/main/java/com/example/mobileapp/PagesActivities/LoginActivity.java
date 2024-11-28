@@ -2,7 +2,6 @@ package com.example.mobileapp.PagesActivities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,11 +31,6 @@ public class LoginActivity extends AppCompatActivity {
         EditText loginPasswordInput = findViewById(R.id.loginPasswordInput);
         Button loginUserButton = findViewById(R.id.loginUserButton);
 
-//
-//        redirectToRegisterButton.setOnClickListener(v -> {
-//            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-//            startActivity(intent);
-//        });
 
         redirectToRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
                 executorService.execute(() -> {
-                    String result = authController.logInUser (username, password);
+                    String result = authController.logInUser(username, password);
                     runOnUiThread(() -> handleLoginResult(result, username));
                 });
             }
